@@ -1,17 +1,18 @@
-# Hotel Website
+# Responsive Hotel Website
 
-A responsive hotel website built using HTML and CSS, designed to showcase hotel services and improve user experience.
+A modern, multi-page hotel website built with HTML5 and CSS3.
 
 ## Features
-- Multi-page layout for easy navigation.
-- Responsive design adaptable to various devices.
-- Clean and modern interface.
+- Responsive design for all devices
+- 5 pages: Home, About, Services, Gallery, Contact
+- Clean navigation & attractive visuals
 
-## Technologies Used
-- **HTML**: Structure of the website.
-- **CSS**: Styling and responsiveness.
+## Technologies
+- HTML5
+- CSS3 (Flexbox, Grid, Media Queries)
 
-## Installation
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/ContradNamiseb/Hotel-website.git
+## How to View
+1. Clone the repo
+2. Open `Homepage.html` in your browser
+
+Live demo coming soon!

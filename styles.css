@@ -221,3 +221,21 @@ input:focus, textarea:focus {
     outline: none;
     box-shadow: 0 0 0 3px rgba(212, 163, 115, 0.3);
 }
+
+/* Skip Link for Accessibility */
+.skip-link {
+    position: absolute;
+    top: -40px;
+    left: 0;
+    background: #d4a373;
+    color: white;
+    padding: 8px;
+    z-index: 100;
+    transition: top 0.3s;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.skip-link:focus {
+    top: 0;
+}

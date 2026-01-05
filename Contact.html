@@ -24,7 +24,7 @@
         <section>
             <h2>Contact Us</h2>
             <p>Have questions or want to book a stay? Reach out to us!</p>
-            <form id="contact-form" onsubmit="return validateForm()">
+            <form id="contact-form" onsubmit="validateForm(event)">
                 <label for="name">Name:</label>
                 <input type="text" id="name" name="name" required>
                 <label for="email">Email:</label>
@@ -32,6 +32,7 @@
                 <label for="message">Message:</label>
                 <textarea id="message" name="message" required></textarea>
                 <button type="submit" class="btn">Send Message</button>
+                <div id="form-status" aria-live="polite" class="status-message"></div>
             </form>
             <p><strong>Address:</strong> 123 Omumborombonga st, Windhoek City</p>
             <p><strong>Phone:</strong> (061) 456-780</p>
@@ -44,16 +45,26 @@
         <p>&copy; 2025 Royal Crown Hotel. All rights reserved.</p>
     </footer>
     <script>
-        function validateForm() {
-            let name = document.getElementById('name').value;
-            let email = document.getElementById('email').value;
-            let message = document.getElementById('message').value;
+        function validateForm(event) {
+            event.preventDefault();
+            const statusDiv = document.getElementById('form-status');
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const message = document.getElementById('message').value;
+
+            statusDiv.className = 'status-message'; // Reset classes
+            statusDiv.innerText = '';
+
             if (name.trim() === '' || email.trim() === '' || message.trim() === '') {
-                alert('Please fill out all fields.');
-                return false;
+                statusDiv.innerText = 'Please fill out all fields.';
+                statusDiv.classList.add('error');
+                return;
             }
-            alert('Form submitted successfully!');
-            return true;
+
+            // Simulate submission
+            statusDiv.innerText = 'Form submitted successfully!';
+            statusDiv.classList.add('success');
+            document.getElementById('contact-form').reset();
         }
     </script>
 </body>

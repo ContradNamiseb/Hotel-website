@@ -66,7 +66,8 @@ nav a:hover {
     color: #d4a373;
 }
 
-nav a.active {
+nav a.active,
+nav a[aria-current="page"] {
     border-bottom: 2px solid #d4a373;
 }
 
@@ -101,7 +102,7 @@ nav a.active {
     display: inline-block;
     padding: 0.5rem 1rem;
     background-color: #d4a373;
-    color: #fff;
+    color: #4a3728;
     text-decoration: none;
     border-radius: 5px;
 }

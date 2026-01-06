@@ -5,3 +5,10 @@
 ## 2024-05-24 - [Accessible Form Feedback]
 **Learning:** Replacing `alert()` with inline, ARIA-live status messages significantly improves the user experience by maintaining context and not interrupting the workflow.
 **Action:** For all future forms, use a dedicated status container with `aria-live="polite"` instead of browser alerts. Ensure success/error states have distinct visual styles (e.g., green/red backgrounds) and clear text.
+## 2024-05-24 - [Navigation State Accessibility]
+**Learning:** Visual indicators for "active" page states (like underlines) are invisible to screen readers.
+**Action:** Always add `aria-current="page"` to the navigation link representing the current page. This standard attribute programmatically communicates the "active" state to assistive technologies, ensuring parity between visual and semantic information.
+
+## 2024-05-24 - [Brand Color Contrast]
+**Learning:** Brand colors (like Gold #d4a373) often fail contrast checks against white text.
+**Action:** Don't default to white text on colored buttons. Always verify contrast ratios. In this case, switching to the brand's Dark Brown (#4a3728) for the text provided excellent contrast (4.97:1) while maintaining the visual identity, avoiding the need to muddy the gold color.

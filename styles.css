@@ -111,6 +111,12 @@ nav a[aria-current="page"] {
     background-color: #b88a5a;
 }
 
+.btn:disabled, button:disabled {
+    opacity: 0.7;
+    cursor: not-allowed;
+    filter: grayscale(30%);
+}
+
 /* Main Content */
 main {
     max-width: 1200px;

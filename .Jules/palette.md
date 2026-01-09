@@ -12,3 +12,7 @@
 ## 2024-05-24 - [Brand Color Contrast]
 **Learning:** Brand colors (like Gold #d4a373) often fail contrast checks against white text.
 **Action:** Don't default to white text on colored buttons. Always verify contrast ratios. In this case, switching to the brand's Dark Brown (#4a3728) for the text provided excellent contrast (4.97:1) while maintaining the visual identity, avoiding the need to muddy the gold color.
+
+## 2025-02-14 - [Explicit Form Instructions]
+**Learning:** Relying solely on `required` attributes is insufficient for good UX. Users need to know what is expected before they submit.
+**Action:** Explicitly mark required fields with a visual indicator (like an asterisk) and provide a legend explaining it. Use `autocomplete` attributes to speed up form filling. Ensure the required indicator color meets contrast guidelines (used #721c24).

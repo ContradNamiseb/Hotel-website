@@ -12,3 +12,10 @@
 ## 2024-05-24 - [Brand Color Contrast]
 **Learning:** Brand colors (like Gold #d4a373) often fail contrast checks against white text.
 **Action:** Don't default to white text on colored buttons. Always verify contrast ratios. In this case, switching to the brand's Dark Brown (#4a3728) for the text provided excellent contrast (4.97:1) while maintaining the visual identity, avoiding the need to muddy the gold color.
+
+## 2024-05-24 - [Accessible Required Indicators]
+**Learning:** Relying solely on the HTML5 `required` attribute is insufficient for visual users, but simply adding an asterisk can be redundant for screen readers if not handled carefully.
+**Action:** Use a dual approach:
+1. Add a visual indicator (e.g., `*`) wrapped in a span with `aria-hidden="true"` inside the label.
+2. Provide a legend explaining the symbol (e.g., "Fields marked with * are required") where the symbol in the legend has `aria-label="asterisk"`.
+This ensures visual clarity without cluttering the screen reader experience, as the input's `required` attribute handles the semantic announcement.

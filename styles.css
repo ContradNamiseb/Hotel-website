@@ -185,6 +185,18 @@ form {
     margin: 1rem 0;
 }
 
+.form-instruction {
+    font-size: 0.9rem;
+    color: #555;
+    margin-bottom: -0.5rem;
+}
+
+.required-indicator {
+    color: #721c24;
+    font-weight: bold;
+    margin-left: 4px;
+}
+
 label {
     font-weight: bold;
 }
@@ -203,6 +215,18 @@ textarea {
 button {
     align-self: flex-start;
     cursor: pointer;
+}
+
+.form-instruction {
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+    color: #555;
+}
+
+.required-indicator {
+    color: #721c24;
+    font-weight: bold;
+    margin-left: 0.2rem;
 }
 
 /* Footer */
@@ -299,4 +323,18 @@ input:focus, textarea:focus {
     background-color: #f8d7da;
     color: #721c24;
     border: 1px solid #f5c6cb;
+}
+
+/* Form UX Enhancements */
+.required-indicator {
+    color: #721c24; /* Accessible red (matches error status color) */
+    font-weight: bold;
+    margin-left: 0.25rem;
+}
+
+.form-instruction {
+    font-size: 0.9rem;
+    color: #666;
+    margin-bottom: 1rem;
+    font-style: italic;
 }

@@ -185,6 +185,18 @@ form {
     margin: 1rem 0;
 }
 
+.form-instruction {
+    font-size: 0.9rem;
+    color: #555;
+    margin-bottom: -0.5rem;
+}
+
+.required-indicator {
+    color: #721c24;
+    font-weight: bold;
+    margin-left: 4px;
+}
+
 label {
     font-weight: bold;
 }

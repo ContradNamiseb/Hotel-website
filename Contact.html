@@ -12,7 +12,7 @@
         <h1>Royal Crown Hotel</h1>
         <nav>
             <ul>
-                <li><a href="Homepage.html">Home</a></li>
+                <li><a href="index.html">Home</a></li>
                 <li><a href="About_us.html">About Us</a></li>
                 <li><a href="Services.html">Services</a></li>
                 <li><a href="Gallery.html">Gallery</a></li>
@@ -24,14 +24,14 @@
         <section>
             <h2>Contact Us</h2>
             <p>Have questions or want to book a stay? Reach out to us!</p>
+            <p class="form-instruction">Fields marked with <span class="required-indicator" aria-label="asterisk">*</span> are required.</p>
             <form id="contact-form" onsubmit="validateForm(event)">
-                <p class="form-instruction">Fields marked with <span class="required-indicator" aria-label="asterisk">*</span> are required.</p>
                 <label for="name">Name: <span class="required-indicator" aria-hidden="true">*</span></label>
-                <input type="text" id="name" name="name" autocomplete="name" placeholder="John Doe" required>
+                <input type="text" id="name" name="name" required placeholder="John Doe" autocomplete="name">
                 <label for="email">Email: <span class="required-indicator" aria-hidden="true">*</span></label>
-                <input type="email" id="email" name="email" autocomplete="email" placeholder="john@example.com" required>
+                <input type="email" id="email" name="email" required placeholder="john@example.com" autocomplete="email">
                 <label for="message">Message: <span class="required-indicator" aria-hidden="true">*</span></label>
-                <textarea id="message" name="message" placeholder="How can we help you?" required></textarea>
+                <textarea id="message" name="message" required placeholder="How can we help you?"></textarea>
                 <button type="submit" class="btn">Send Message</button>
                 <div id="form-status" aria-live="polite" class="status-message"></div>
             </form>

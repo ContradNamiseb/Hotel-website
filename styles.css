@@ -255,6 +255,19 @@ footer {
     }
 }
 
+/* Form UX Enhancements */
+.form-instruction {
+    font-size: 0.9rem;
+    color: #666;
+    margin-bottom: 0.5rem;
+    font-style: italic;
+}
+
+.required-indicator {
+    color: #b00;
+    margin-left: 2px;
+}
+
 /* Focus Visibility for Keyboard Accessibility */
 :focus-visible {
     outline: 2px solid #d4a373;
